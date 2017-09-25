@@ -25,7 +25,17 @@ public final class DummyMultiset<TElement> implements Multiset<TElement> {
 
     @Override
     public Iterator<TElement> iterator() {
-        return null;
+        return new Iterator<TElement>() {
+            @Override
+            public boolean hasNext() {
+                return false;
+            }
+
+            @Override
+            public TElement next() {
+                return null;
+            }
+        };
     }
 
     @Override
