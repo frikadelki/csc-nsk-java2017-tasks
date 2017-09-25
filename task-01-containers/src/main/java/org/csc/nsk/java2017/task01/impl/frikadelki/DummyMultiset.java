@@ -40,7 +40,7 @@ public final class DummyMultiset<TElement> implements Multiset<TElement> {
 
     @Override
     public boolean add(final TElement element) {
-        return false;
+        return true;
     }
 
     @Override
