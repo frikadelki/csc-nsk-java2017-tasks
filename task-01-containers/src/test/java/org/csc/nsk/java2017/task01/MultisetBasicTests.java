@@ -19,5 +19,8 @@ public final class MultisetBasicTests {
     public void testNewDefaultMultisetIsEmpty() {
         final Multiset<Object> multiset = MultisetFactory.makeDefaultMultiset();
         Assert.assertTrue(multiset.isEmpty());
+        Assert.assertTrue(multiset.size() == 0);
+        Assert.assertTrue(!multiset.contains(0));
+        Assert.assertTrue(!multiset.iterator().hasNext());
     }
 }
